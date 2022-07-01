@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "7b6b924d-71db-49dd-9279-f76f0ce8becc",
+		"name": "hypefast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "url shortener",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8005/api/urlShortener?url=shortened.com/1507bb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8005",
+					"path": [
+						"api",
+						"urlShortener"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "shortened.com/1507bb"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "url shortener",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8005/api/urlShortener?url=shortened.com/1507bb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"api",
+								"urlShortener"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "shortened.com/1507bb"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Jul 2022 09:03:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"originalUrl\": \"www.facebook.com/profile\",\n    \"shortenedUrl\": \"shortened.com/1507bb\",\n    \"redirectCounter\": 6\n}"
+				}
+			]
+		}
+	]
+}
